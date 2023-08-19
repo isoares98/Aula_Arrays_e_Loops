@@ -8,15 +8,19 @@ const nomesDeEstudantes = [`jose`, `joao`, `maria`, `joana`, `andre`];
 
 // COMO MODIFICAR UM ELEMENTO EXISTENTE:
 nomesDeEstudantes[0] = `matheus`;
-console.log(nomesDeEstudantes[0]);
+//console.log(nomesDeEstudantes[0]);
 
 //ADICIONAR ELEMENTOS
 nomesDeEstudantes.push(`fabricio`);
-console.log(nomesDeEstudantes); // ele imprimira [ 'matheus', 'joao', 'maria', 'joana', 'andre', 'fabricio' ]
+//console.log(nomesDeEstudantes); // ele imprimira [ 'matheus', 'joao', 'maria', 'joana', 'andre', 'fabricio' ]
+
+//ADICIONAR UM ELEMENTO AO FINAL DE UM ARRAY, independente se mudamos o array diretamente no codigo manualmente.
+nomesDeEstudantes[nomesDeEstudantes.length] = `pedro`;
+console.log(nomesDeEstudantes);
 
 // REMOVER O ultimo ELEMENTO
 nomesDeEstudantes.pop();
-console.log(nomesDeEstudantes); // irá imprimir [ 'matheus', 'joao', 'maria', 'joana', 'andre' ]
+//console.log(nomesDeEstudantes); // irá imprimir [ 'matheus', 'joao', 'maria', 'joana', 'andre' ]
 
 
 // REMOVER ou editar um ou mais ELEMENTOS EM UM LUGAR OU QUANTIDADE ESPECIFICA
@@ -24,9 +28,9 @@ console.log(nomesDeEstudantes); // irá imprimir [ 'matheus', 'joao', 'maria', '
 // UTILIZANDO PARA REMOVER
 //splice(inicio: O índice onde a remoção ou substituição deve começar, quantidade: O número de elementos a serem removidos)
 nomesDeEstudantes.splice(0, 3); // ou seja, a partir do jose, apague 3 indices
-console.log(nomesDeEstudantes); // ira imprimir [ 'joana', 'andre' ]
+//console.log(nomesDeEstudantes); // ira imprimir [ 'joana', 'andre' ]
 
 // UTILIZANDO PARA ADICIONAR
 //splice(inicio: O índice onde a remoção ou substituição deve começar, quantidade: O número de elementos a serem removidos, elemento1, elemento2, ...: Os elementos que você deseja adicionar)
 nomesDeEstudantes.splice(0, 0, 'matheus', 'joao', 'maria'); // ou seja, a partir do jose, apague 3 indices
-console.log(nomesDeEstudantes); // ira imprimir [ 'matheus', 'joao', 'maria', 'joana', 'andre' ]
+//console.log(nomesDeEstudantes); // ira imprimir [ 'matheus', 'joao', 'maria', 'joana', 'andre' ]

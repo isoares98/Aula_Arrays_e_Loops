@@ -1,13 +1,12 @@
-//exemplo do que é uma array
+//Arrays permitem o armazenamento ordenado de dados semelhantes
+//exeplo: em vez de utilizarmos variaveis comuns para declarar varios nomes:
 
 //variavel comuns
-
 const nome1 = "joao";
 const nome2 = "guilherme";
 const nome3 = "joaquim";
 
-//arrays são usadas quando tenho muitos dados para uma unica variavel, vejo o exemplo abaixo
-
+//utilizamos somente um array e declaramos todos:
 const nomesDeEstudantes = [`jose`, `felipe`, `mariana`];
 //Observe que para tornar uma variavel array usamos [ ]
 
@@ -16,8 +15,8 @@ const nomesDeEstudantes = [`jose`, `felipe`, `mariana`];
 // É uma maneira de armazenar vários valores (como números, strings, objetos ou outros tipos de dados) em uma única estrutura de dados organizada.
 // Cada valor é associado a uma posição específica dentro do array, que é chamada de "índice".
 
-// index ou indice sempre começa do 0
-// então consequentemente jose é 0, felipe é 1 e mariana é 2
+// index ou indice é a posição de cada item na lista, començando sempre em 0
+// então consequentemente jose é 0, felipe 1 e mariana 2
 // o tamanho desse array é 3
 
 console.log(nomesDeEstudantes); // quando coloco o comando console.log ele retornará todos os nomes dentro do array
